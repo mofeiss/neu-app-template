@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>NeutralinoJs sample app</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <div id="neutralinoapp">
+      <h1>易语言风格桌面应用</h1>
+      <div id="info"></div>
+      
+      <!-- 易语言风格的控制面板 -->
+      <div class="control-panel">
+        <h2>易语言风格功能演示</h2>
+        
+        <!-- 按钮测试区域 -->
+        <div class="button-section">
+          <h3>按钮操作</h3>
+          <button onclick="showMessage()">显示信息框</button>
+          <button onclick="askQuestion()">询问问题</button>
+          <button onclick="openNotepad()">打开记事本</button>
+        </div>
+        
+        <!-- 文件操作区域 -->
+        <div class="file-section">
+          <h3>文件操作</h3>
+          <button onclick="selectFile()">选择文件</button>
+          <button onclick="selectFolder()">选择文件夹</button>
+          <button onclick="showSystemInfo()">显示系统信息</button>
+        </div>
+        
+        <!-- 输入框测试区域 -->
+        <div class="input-section">
+          <h3>输入框测试</h3>
+          <input type="text" id="textInput" placeholder="请输入文本">
+          <button onclick="showInputText()">显示输入内容</button>
+          <div id="outputArea"></div>
+        </div>
+      </div>
+      
+      <!-- 原始示例 -->
+      <div class="original-section">
+        <hr>
+        <img src="/icons/logo.gif" alt="Neutralinojs" />
+        <div>
+          <a href="#" onclick="openDocs();">Docs</a> &middot;  
+          <a href="#" onclick="openTutorial();">Video tutorial</a>
+        </div>
+      </div>
+    </div>
+    <!-- Neutralino.js client. This file is gitignored, 
+        because `neu update` typically downloads it.
+        Avoid copy-pasting it. 
+        -->
+    <script src="/js/neutralino.js"></script>
+    <!-- Your app's source files -->
+    <script src="/js/main.js"></script>
+  </body>
+</html>
